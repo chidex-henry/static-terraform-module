@@ -17,7 +17,7 @@ This project aims to deploy a static website on Amazon Web Services (AWS) using 
 
 2. **IAM User Setup:**
    - Created an IAM user named Terraform-user with programmatic access.
-   - Attached the `AdministratorAccess` permission policy to Terraform-user to allow creating AWS resources.
+   - Attached the `AdministratorAccess` permission policy for Terraform-user to allow creating AWS resources.
    
 3. **AWS Credential Management:**
    - Created a named profile (terraform-user) for the IAM user to allow Terraform to authenticate with AWS environment using the user’s credentials.
@@ -38,7 +38,7 @@ This project aims to deploy a static website on Amazon Web Services (AWS) using 
      - Simple Notification Service (SNS) for alerting activities within the Auto Scaling Group.
      - Route 53 for registering domain names and setting up DNS records.
 
-## Challenges and Solutions
+## Challenges and Approach 
 
 - **Resource Configuration:** Building and compiling resource arguments and attribute names posed challenges.
   - Solution: Debugging error messages and referencing AWS Management Console alongside Terraform documentation to align resource configurations.
